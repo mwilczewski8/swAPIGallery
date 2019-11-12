@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="scripts/jquery-3.1.0.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="scripts/all.js"></script>
+    <script src="SWAPI/lib/swapi.js"></script>
+    <script src="scripts/swScripts.js"></script>
+    <script src="scripts/tools.js"></script>
+    <script src="scripts/choose-box.js"></script>
+    <script src="scripts/pager.js"></script>
+    <script src="scripts/searchbar.js"></script>
+    <script src="scripts/choose-box-container.js"></script>
+    <script src="scripts/show-container.js"></script>
+    <script src="scripts/container.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-header row">
+            <p id="main-title">Star Wars Gallery</p>
+        </div>
+    </div>
+    <div class="show-container">
+        <div class="title-row">
+            <div class="col-5 col-md-8" id="title-row-c1"></div>
+            <div class="col-7 col-md-4" id="title-row-c2"></div>
+        </div>
+        <div class="content-row row">
+            <div class="col-md-3 col-lg-4" id="image-col">
+                <h4 id="name">Name</h4>
+                <div id="image-container"> 
+                    <img id="image"></img>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4" id="info-container">
+                <h5>Information:</h5>
+            </div>
+            <div class="col-md-4" id="pages-container">
+                <h5>More:</h5>
+            </div>
+        </div>
+        <div id="footer">Created by Mateusz Wilczewski</div>
+    </div>
+    
+    <script>
+        $(document).ready(()=>{
+            let container = new Container();
+            container.init();
+        });
+    </script>
+    
+</body>
+</html>
